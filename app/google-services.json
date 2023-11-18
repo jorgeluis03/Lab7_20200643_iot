@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "869820519160",
+    "project_id": "lab7-58d87",
+    "storage_bucket": "lab7-58d87.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:869820519160:android:6150034702f99b90a6610d",
+        "android_client_info": {
+          "package_name": "com.example.salonbellezalab7_20200643"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDql3MwGAhdZqwIXZzpAhopmAq7d4vI6zk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

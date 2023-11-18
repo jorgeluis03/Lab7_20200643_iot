@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DatosSalonActivity">
+
+    <RelativeLayout
+        android:id="@+id/toolbarDatos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#D6B8B8"
+        android:padding="10dp">
+
+        <ImageButton
+            android:id="@+id/btnBack"
+            android:layout_width="32dp"
+            android:layout_height="32sp"
+            android:layout_marginEnd="10dp"
+            android:src="@drawable/icon_back"
+            android:background="?attr/selectableItemBackgroundBorderless"/>
+
+
+        <TextView
+            android:layout_toRightOf="@id/btnBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Datos del Salon"
+            android:textStyle="bold"
+            android:textSize="22sp"/>
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/botones"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_below="@+id/toolbarDatos">
+
+        <Button
+            android:id="@+id/btnCitasDia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Citas del dia"
+            style="@style/Widget.AppCompat.Button"/>
+
+        <Button
+            android:id="@+id/btnFotos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fotos"
+            style="@style/Widget.AppCompat.Button"
+            android:layout_alignParentEnd="true"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_below="@+id/botones">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Datos del salon"
+            android:textAlignment="center"
+            android:layout_margin="10dp"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:id="@+id/correoUser"
+            android:hint="telebarver"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:id="@+id/nombreSalon"
+            android:hint="nombre salon"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Servicios"
+            android:textAlignment="center"
+            android:layout_margin="10dp"/>
+
+        <CheckBox
+            android:id="@+id/cb_cortePelo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Corte de pelo"
+            android:layout_margin="10dp"/>
+        <CheckBox
+            android:id="@+id/cb_Alisado"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Alisado"
+            android:layout_margin="10dp"/>
+        <CheckBox
+            android:id="@+id/cb_tenidoPelo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Teñido de pelo"
+            android:layout_margin="10dp"/>
+        <CheckBox
+            android:id="@+id/cb_pedicura"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Pedicura"
+            android:layout_margin="10dp"/>
+
+        <Button
+            android:id="@+id/btnGuardar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Guardar"
+            android:layout_margin="10dp"
+            style="@style/Widget.AppCompat.Button"/>
+    </LinearLayout>
+
+</RelativeLayout>

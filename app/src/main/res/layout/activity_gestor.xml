@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".gestor.GestorActivity">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:background="#D6B8B8">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Gestion Salon Belleza"
+            android:textSize="22sp"/>
+
+        <ImageButton
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:src="@drawable/icon_logout"
+            android:layout_alignParentEnd="true"
+            android:background="?attr/selectableItemBackgroundBorderless"/>
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/botones"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:padding="10dp">
+
+        <Button
+            android:id="@+id/btnDatosSalon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Datos del salón"
+            style="@style/Widget.AppCompat.Button"/>
+
+        <Button
+            android:id="@+id/btnFotos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fotos"
+            style="@style/Widget.AppCompat.Button"
+            android:layout_alignParentEnd="true"/>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tvCitas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Citas del Día"
+        android:textSize="18sp"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textStyle="bold"
+        android:layout_below="@+id/botones"
+        android:layout_margin="10dp"/>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/recycleViewCitas"
+        android:layout_below="@+id/tvCitas"/>
+
+</LinearLayout>
